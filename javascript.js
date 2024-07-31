@@ -1,50 +1,3 @@
-/*const welcome={
-    fname : "bhushanraaj",
-    lname : "yougaraj",
-    name :function() {
-        console.log(this.fname + " " + this.lname);
-    }
-}
-welcome.name()
-const well={
-    city : "hosur",
-    state : "tamilnadu",
-}
-console.log(well.city+ " " + well.state);
-
-call(welcome,well)
-
-     (OR)
-
-const welcome={
-    name :function() {
-       return this.fname + " " + this.lname;
-    }
-}
-const well={
-    fname : "bhushanraaj",
-    lname : "yougaraj",
-}
-document.write(well.fname+ " " + well.lname);
-call(welcome,well)
-
-*/
-// const hello =() => document.write(" bhushanraaj");
-// hello();
-
-// const add =(a,b) => a+b;document.write(add(4,5));
-
-
-
-
-
-
-
-
-
-
-
-
 // ARRAY LIST PROGRAM 
 
 /*
@@ -248,6 +201,53 @@ document.write(result);
 */
 
 
+// ================================================================================================================================================
 
+// 31/07/2024
 
+/*
+// 13. Array of object sorting
 
+const peoples = [
+    { name: "Ram", age: 50 },
+    { name: "Raja", age: 30 },
+    { name: "Joy", age: 25 }
+];
+peoples.sort((a, b) => a.age - b.age);
+console.log(peoples);
+*/
+
+/*
+// 14. Merging the arrays
+
+const arr1 = [4, 6, 8];
+const arr2 = [9, 2, 3];
+const mergedArr = [...arr1, ...arr2];
+console.log( mergedArr);
+
+*/
+
+/*
+// 15.Find the Index of the first occurence
+
+let myArray = [1, 2, 3, 4, 2, 5];
+let element = 5;
+let index = myArray.indexOf(element);
+console.log(index);
+*/
+
+/*
+// 16. Creating new array with a given length
+
+const length = 9;
+const newArray = Array.from({ length }, (_, i) => i + 1);
+console.log(newArray);
+*/
+
+/*
+// 17. Array deduplication
+
+const arr = [9, 2, 2, 4, 4, 8, 5];
+const darray = [...new Set(arr)];
+console.log(darray);
+*/

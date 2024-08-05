@@ -251,3 +251,151 @@ const arr = [9, 2, 2, 4, 4, 8, 5];
 const darray = [...new Set(arr)];
 console.log(darray);
 */
+
+
+// ===================================================================================================================================================
+
+// 05/08/2024
+
+/*
+// 20. Grouping of array Elements
+
+function groupBy(array, key) {
+    return array.reduce((result, currentValue) => {
+      const groupKey = currentValue[key];
+      if (!result[groupKey]) {
+        result[groupKey] = [];
+      }
+      result[groupKey].push(currentValue);
+      
+      return result;
+    }, {});
+  
+}
+  const data = [
+    { name: 'Alice', age: 25 },
+    { name: 'Bob', age: 25 },
+    { name: 'Charlie', age: 30 },
+    { name: 'David', age: 30 },
+    { name: 'Eve', age: 35 }
+  ];
+  const groupedByAge = groupBy(data, 'age');
+  console.log(groupedByAge);
+*/
+
+/*
+// 21. Array intersection of two Sets
+
+function intersectArrays(arr1, arr2) {
+    const set2 = new Set(arr2);
+    return arr1.filter(element => set2.has(element));
+  }
+
+  const array1 = [1, 2, 3, 4, 5];
+  const array2 = [4, 5, 6, 7, 8];
+  
+  const intersection = intersectArrays(array1, array2);
+  console.log(intersection); 
+*/
+
+/*
+// 22. Array Manipulation with Slice()
+
+const array = [1, 2, 3, 4, 5];
+const slicedArray = array.slice(1, 4);
+console.log(slicedArray);
+*/
+
+/*
+// 23. Implemention a Queue with array
+
+class Queue {
+    constructor() {
+      this.items = [];
+    }
+    enqueue(element) {
+      this.items.push(element);
+    }
+    dequeue() {
+      if (this.isEmpty()) {
+        throw new Error("Queue is empty");
+      }
+      return this.items.shift();
+    }
+    isEmpty() {
+      return this.items.length === 0;
+    }
+    size() {
+      return this.items.length;
+    }
+    peek() {
+      if (this.isEmpty()) {
+        throw new Error("Queue is empty");
+      }
+      return this.items[0];
+    }
+    clear() {
+      this.items = [];
+    }
+  }
+  const queue = new Queue();
+  queue.enqueue(1);
+  queue.enqueue(2);
+  queue.enqueue(3);
+  
+  console.log(queue.dequeue()); 
+  console.log(queue.peek());   
+  console.log(queue.size());    
+  console.log(queue.isEmpty()); 
+  
+  queue.clear();
+  console.log(queue.isEmpty()); 
+*/
+
+/*
+// 24. Implemention a Stack with array
+
+class Stack {
+    constructor() {
+      this.items = [];
+    }
+    push(element) {
+      this.items.push(element);
+    }
+    pop() {
+      if (this.isEmpty()) {
+        throw new Error("Stack is empty");
+      }
+      return this.items.pop();
+    }
+    isEmpty() {
+      return this.items.length === 0;
+    }
+    size() {
+      return this.items.length;
+    }
+    peek() {
+      if (this.isEmpty()) {
+        throw new Error("Stack is empty");
+      }
+      return this.items[this.items.length - 1];
+    }
+    clear() {
+      this.items = [];
+    }
+  }
+  const stack = new Stack();
+  stack.push(1);
+  stack.push(2);
+  stack.push(3);
+  
+  console.log(stack.pop());   
+  console.log(stack.peek());   
+  console.log(stack.size());   
+  console.log(stack.isEmpty());
+  
+  stack.clear();
+  console.log(stack.isEmpty());
+  */
+
+// =================================================================================================================================================
